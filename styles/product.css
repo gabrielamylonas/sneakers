@@ -1,0 +1,223 @@
+.product {
+  height: 100vh;
+  background-color: var(--whitesmoke);
+  position: relative;
+  padding: 1.25rem 0;
+}
+
+.product__img {
+  width: 50%;
+  margin-left: 2%;
+}
+
+.product__details {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__name {
+  font-size: 4.6875rem;
+  font-weight: 900;
+}
+
+.product__price {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.25rem 0;
+}
+
+.product__desc {
+  font-size: 1.25rem;
+  color: var(--gray);
+  margin-bottom: 1.25rem;
+}
+
+.product__colors,
+.product__sizes {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.colors {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.3125rem;
+  background-color: var(--bg-dark);
+  margin-right: 0.625rem;
+  cursor: pointer;
+}
+
+.colors:last-child {
+  background-color: var(--darkblue);
+}
+
+.product__sizes {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.product__size {
+  padding: 0.3125rem 1.25rem;
+  border: 0.0625rem solid var(--bg-dark);
+  display: flex;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.product__button {
+  align-self: flex-end;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product__button:hover {
+  background-color: var(--bg-light);
+  color: var(--bg-dark);
+}
+
+/* Payment */
+.payment {
+  width: 31.25rem;
+  height: 31.25rem;
+  background-color: var(--bg-light);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 3.125rem;
+  display: none;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0rem 0.3125rem.125rem var(--gray);
+}
+
+.pay__title {
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-bottom: 0.9375rem;
+  padding-top: 0.625rem;
+}
+
+.pay__label {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.pay__input {
+  padding: 0.625rem;
+  margin: 0.625rem 0;
+  border: none;
+  border-bottom: 0.0625rem solid var(--gray);
+}
+
+.pay__input::placeholder {
+  color: var(--placeholder);
+}
+
+.card__icon {
+  width: 2.5rem;
+  margin-right: 0.625rem;
+}
+
+.card__icons {
+  display: flex;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sm {
+  width: 30%;
+}
+
+.pay__button {
+  position: absolute;
+  font-weight: 600;
+  height: 2.5rem;
+  bottom: -0.25rem;
+  width: 100%;
+  left: 0;
+  border: none;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  box-shadow: 0rem 0rem 0.3125rem.125rem var(--gray);
+  background-color: var(--green);
+  color: var(--bg-light);
+  cursor: pointer;
+}
+
+.close {
+  border: none;
+  position: absolute;
+  background-color: var(--gray);
+  color: var(--bg-light);
+  width: 1.5625rem;
+  height: 1.5625rem;
+  top: 1.25rem;
+  right: 1.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .product__img {
+    width: 80%;
+  }
+} 
+
+@media only screen and (max-width: 1100px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .product__img {
+    width: 50%;
+  }
+
+  .product__details {
+    width: 90vw;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+
+  .product__sizes {
+    gap: 0.9375rem;
+  }
+
+  .product__size {
+    display: flex;
+  }
+
+  .product__name {
+    font-size: 3.125rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .payment{
+    width: 85vw;
+    padding: 1.25rem 2.5rem 1.25rem;
+  }
+}
