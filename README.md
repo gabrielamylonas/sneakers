@@ -11,9 +11,9 @@
 <p>This is a project that I developed for a tennis ecommerce.</p>
 
 ### What does it?
-- Slidder with product images and infos
-- Button that changes the color of the displayed sneaker
-- Popup button for a purchase form
+- Responsive page made with Sass
+- Light and Dark Theme Toggle
+- Button to scroll up
 
 ## :computer: Deploy
 - [Deploy](https://gabrielamylonas.github.io/sneakers/)
